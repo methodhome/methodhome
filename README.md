@@ -1282,4 +1282,57 @@
   </div>
 </section>
 </body>
+<footer class="site-footer">
+  <style>
+    .site-footer {
+      padding: 1.5rem 1.5rem;
+      background: #050505;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      font-size: 0.85rem;
+      color: var(--gray);
+    }
+
+    .footer-inner {
+      max-width: var(--max-width);
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      font-size: 0.85rem;
+    }
+
+    .footer-links span {
+      color: var(--gray);
+    }
+
+    .footer-links span::before {
+      content: "• ";
+      color: var(--gold);
+    }
+
+    @media (max-width: 650px) {
+      .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+
+  <div class="footer-inner">
+    <div>© METHOD HOME. All rights reserved.</div>
+    <div class="footer-links">
+      <span>Detergents & hygiene</span>
+      <span>Food products</span>
+      <span>Nuts & dried fruits</span>
+    </div>
+  </div>
+</footer>
 </html>
