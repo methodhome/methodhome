@@ -248,5 +248,166 @@
     </div>
   </div>
 </section>
+<section id="products" class="section-products">
+  <style>
+    .section-products {
+      padding: 3rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .section-products-header {
+      margin-bottom: 2rem;
+    }
+
+    .section-products-header h2 {
+      font-size: 1.8rem;
+      color: var(--gold);
+      margin-bottom: 0.5rem;
+    }
+
+    .section-products-header p {
+      color: var(--gray);
+      max-width: 550px;
+      font-size: 0.98rem;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.5rem;
+    }
+
+    .product-card {
+      background: #181818;
+      border-radius: 0.9rem;
+      padding: 1.4rem;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      box-shadow: 0 0 18px rgba(0, 0, 0, 0.4);
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      min-height: 200px;
+    }
+
+    .product-pill {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--gold-light);
+    }
+
+    .product-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--white);
+    }
+
+    .product-text {
+      font-size: 0.9rem;
+      color: var(--gray);
+      flex: 1;
+    }
+
+    .product-meta {
+      font-size: 0.85rem;
+      color: var(--gold-light);
+      margin-top: 0.3rem;
+    }
+
+    .product-list {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 0.3rem;
+    }
+
+    .product-list li {
+      font-size: 0.86rem;
+      color: var(--gray);
+      margin-bottom: 0.15rem;
+      position: relative;
+      padding-left: 0.9rem;
+    }
+
+    .product-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--gold);
+    }
+
+    @media (max-width: 950px) {
+      .products-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 650px) {
+      .products-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <div class="section-products-header">
+    <h2>Our main product groups</h2>
+    <p>
+      METHOD HOME focuses on three core product groups designed for B2B partners in Russia:
+      detergents & hygiene, food products and premium nuts & dried fruits.
+    </p>
+  </div>
+
+  <div class="products-grid">
+    <!-- Group 01 -->
+    <div class="product-card">
+      <div class="product-pill">Group 01</div>
+      <div class="product-title">Detergents & Hygiene</div>
+      <p class="product-text">
+        Household and industrial detergents and hygiene products suitable for distribution
+        and private-label production.
+      </p>
+      <ul class="product-list">
+        <li>Laundry liquids and powders</li>
+        <li>Dishwashing liquids</li>
+        <li>Surface and floor cleaners</li>
+        <li>Hand wash and sanitizers</li>
+      </ul>
+      <div class="product-meta">Target: distributors · manufacturers</div>
+    </div>
+
+    <!-- Group 02 -->
+    <div class="product-card">
+      <div class="product-pill">Group 02</div>
+      <div class="product-title">Food Products</div>
+      <p class="product-text">
+        Essential food items sourced under controlled quality for wholesale, cash & carry
+        and retail partners.
+      </p>
+      <ul class="product-list">
+        <li>Edible oils</li>
+        <li>Rice and grains</li>
+        <li>Canned and packaged foods</li>
+        <li>Basic ingredients for retail shelves</li>
+      </ul>
+      <div class="product-meta">Target: wholesalers · cash & carry</div>
+    </div>
+
+    <!-- Group 03 -->
+    <div class="product-card">
+      <div class="product-pill">Group 03</div>
+      <div class="product-title">Nuts & Dried Fruits</div>
+      <p class="product-text">
+        Premium nuts and dried fruits for snacks, bakery, confectionery and food-industry applications.
+      </p>
+      <ul class="product-list">
+        <li>Pistachios, hazelnuts, sunflower seeds</li>
+        <li>Raisins, dates, mixed dried fruits</li>
+        <li>Bulk and retail-ready options</li>
+        <li>Suitable for export-oriented partners</li>
+      </ul>
+      <div class="product-meta">Target: distributors · food industry</div>
+    </div>
+  </div>
+</section>
 </body>
 </html>
