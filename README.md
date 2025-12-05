@@ -1336,5 +1336,3 @@
   </div>
 </footer>
 </html>
-<h2 style="color: var(--gold); margin-top: 2rem;">Base Template Loaded Successfully</h2>
-<p>If you see this message, the site structure works and we can continue.</p>
