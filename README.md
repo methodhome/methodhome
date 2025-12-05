@@ -1111,5 +1111,175 @@
     </div>
   </div>
 </section>
+<section id="contact" class="section-contact">
+  <style>
+    .section-contact {
+      padding: 3rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .section-contact h2 {
+      font-size: 1.8rem;
+      color: var(--gold);
+      margin-bottom: 0.5rem;
+    }
+
+    .section-contact p {
+      color: var(--gray);
+      font-size: 0.95rem;
+      margin-bottom: 0.8rem;
+      max-width: 650px;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      gap: 2rem;
+      margin-top: 1.5rem;
+    }
+
+    .contact-form {
+      display: grid;
+      gap: 0.75rem;
+    }
+
+    .contact-form label {
+      font-size: 0.85rem;
+      color: var(--gray);
+      margin-bottom: 0.1rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form select {
+      width: 100%;
+      padding: 0.55rem 0.7rem;
+      border-radius: 0.5rem;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      background: #111111;
+      color: var(--white);
+      font-size: 0.9rem;
+      outline: none;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus,
+    .contact-form select:focus {
+      border-color: var(--gold);
+    }
+
+    .contact-form textarea {
+      min-height: 110px;
+      resize: vertical;
+    }
+
+    .btn-contact {
+      padding: 0.7rem 1.4rem;
+      border-radius: 999px;
+      background: var(--gold);
+      color: var(--black);
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+    }
+
+    .contact-meta {
+      font-size: 0.9rem;
+      color: var(--gray);
+      display: grid;
+      gap: 1.1rem;
+    }
+
+    .contact-meta-title {
+      color: var(--gold);
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    @media (max-width: 850px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <h2>Contact & cooperation</h2>
+  <p>
+    Share your company details and the products you are interested in. Our team will respond with
+    suitable options, pricing and next steps.
+  </p>
+
+  <div class="contact-grid">
+    <div>
+      <form class="contact-form">
+        <div>
+          <label for="company">Company name</label>
+          <input id="company" type="text" placeholder="Your company name">
+        </div>
+        <div>
+          <label for="person">Contact person</label>
+          <input id="person" type="text" placeholder="Full name">
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="name@example.com">
+        </div>
+        <div>
+          <label for="phone">Phone / WhatsApp</label>
+          <input id="phone" type="tel" placeholder="+7 ... / +90 ...">
+        </div>
+        <div>
+          <label for="country">Country & city</label>
+          <input id="country" type="text" placeholder="e.g. Russia, Moscow">
+        </div>
+        <div>
+          <label for="type">Type of business</label>
+          <select id="type">
+            <option value="">Select</option>
+            <option value="distributor">Distributor / Wholesaler</option>
+            <option value="manufacturer">Manufacturer / Private label</option>
+            <option value="wholesale">Wholesale market / Cash & carry</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Products of interest, approximate volumes, other details"></textarea>
+        </div>
+        <div>
+          <button type="button" class="btn-contact">Send request</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="contact-meta">
+      <div>
+        <div class="contact-meta-title">Russia office</div>
+        <p>
+          Russian Federation, Moscow, Kaluzhskoye Highway, 22 km, building 10,<br>
+          Food City, 2-14-59 ost<br>
+          Phone: +7 967-100-9191<br>
+          WhatsApp: +7 967-100-9191<br>
+          Email: amir.azadi_ir@yahoo.com
+        </p>
+      </div>
+
+      <div>
+        <div class="contact-meta-title">Main focus</div>
+        <p>
+          B2B supply of detergents, hygiene products, food items and nuts for distributors,
+          manufacturers and wholesale markets in Russia and neighboring regions.
+        </p>
+      </div>
+
+      <div>
+        <div class="contact-meta-title">Working languages</div>
+        <p>
+          English and Russian. Communication language can be selected according to partner preference.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 </body>
 </html>
