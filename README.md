@@ -897,5 +897,112 @@
     </div>
   </div>
 </section>
+<section id="quality" class="section-quality">
+  <style>
+    .section-quality {
+      padding: 3rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .section-quality h2 {
+      font-size: 1.8rem;
+      color: var(--gold);
+      margin-bottom: 0.5rem;
+    }
+
+    .section-quality p {
+      color: var(--gray);
+      font-size: 0.95rem;
+      margin-bottom: 0.8rem;
+      max-width: 650px;
+    }
+
+    .quality-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      gap: 2rem;
+      margin-top: 1.5rem;
+    }
+
+    .quality-list {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 0.5rem;
+    }
+
+    .quality-list li {
+      font-size: 0.9rem;
+      color: var(--gray);
+      margin-bottom: 0.25rem;
+      padding-left: 0.9rem;
+      position: relative;
+    }
+
+    .quality-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--gold);
+    }
+
+    .quality-card {
+      background: #181818;
+      border-radius: 0.9rem;
+      padding: 1.4rem;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 0 18px rgba(0, 0, 0, 0.4);
+      font-size: 0.9rem;
+      color: var(--gray);
+    }
+
+    .quality-card-title {
+      color: var(--gold);
+      font-weight: 600;
+      margin-bottom: 0.6rem;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 850px) {
+      .quality-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <h2>Quality & compliance</h2>
+  <p>
+    METHOD HOME works only with trusted, audited producers and supports partners with documentation
+    needed for import and sales in the Russian market.
+  </p>
+
+  <div class="quality-grid">
+    <div>
+      <p><strong>Quality support includes:</strong></p>
+      <ul class="quality-list">
+        <li>Product specifications and technical data sheets</li>
+        <li>Certificates such as ISO / HACCP where applicable</li>
+        <li>Laboratory test results for selected products</li>
+        <li>Origin and composition information</li>
+        <li>Support with label information for the Russian market</li>
+      </ul>
+      <p style="margin-top:0.6rem;">
+        Exact documentation is confirmed individually for each product group and project.
+      </p>
+    </div>
+
+    <div class="quality-card">
+      <div class="quality-card-title">Working with METHOD HOME</div>
+      <p>
+        Our priority is to build long-term cooperation with professional buyers. We focus on clear
+        communication, realistic timelines and stable quality so that your team can plan confidently.
+      </p>
+      <p style="margin-top:0.5rem;">
+        For new projects, we discuss expected volumes, technical requirements and target price levels
+        in advance, then offer suitable product and packaging options.
+      </p>
+    </div>
+  </div>
+</section>
 </body>
 </html>
