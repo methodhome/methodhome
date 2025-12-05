@@ -409,5 +409,493 @@
     </div>
   </div>
 </section>
+<section id="industries" class="section-industries">
+  <style>
+    .section-industries {
+      padding: 3rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .section-industries-header h2 {
+      font-size: 1.8rem;
+      color: var(--gold);
+      margin-bottom: 0.5rem;
+    }
+
+    .section-industries-header p {
+      color: var(--gray);
+      max-width: 600px;
+      font-size: 0.96rem;
+      margin-bottom: 2rem;
+    }
+
+    .industries-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.5rem;
+    }
+
+    .industry-card {
+      background: #181818;
+      border-radius: 0.9rem;
+      padding: 1.4rem;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      box-shadow: 0 0 18px rgba(0, 0, 0, 0.4);
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      min-height: 180px;
+    }
+
+    .industry-title {
+      font-size: 1.02rem;
+      font-weight: 600;
+      color: var(--white);
+    }
+
+    .industry-text {
+      font-size: 0.9rem;
+      color: var(--gray);
+      flex: 1;
+    }
+
+    .industry-list {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 0.4rem;
+    }
+
+    .industry-list li {
+      font-size: 0.86rem;
+      color: var(--gray);
+      margin-bottom: 0.15rem;
+      padding-left: 0.9rem;
+      position: relative;
+    }
+
+    .industry-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--gold);
+    }
+
+    @media (max-width: 950px) {
+      .industries-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 650px) {
+      .industries-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <div class="section-industries-header">
+    <h2>Industries we serve</h2>
+    <p>
+      METHOD HOME supports professional buyers in the Russian and regional markets, including distributors,
+      manufacturers and wholesale operators.
+    </p>
+  </div>
+
+  <div class="industries-grid">
+    <!-- Card 1 -->
+    <div class="industry-card">
+      <div class="industry-title">Distributors & wholesalers</div>
+      <p class="industry-text">
+        Stable assortments, competitive pricing and documentation support for distribution across Russia
+        and neighboring regions.
+      </p>
+      <ul class="industry-list">
+        <li>Balanced product ranges</li>
+        <li>Flexible minimum order quantities (MOQ)</li>
+        <li>Support with labels and certificates</li>
+      </ul>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="industry-card">
+      <div class="industry-title">Manufacturers & private label</div>
+      <p class="industry-text">
+        Bulk supplies and private-label options for detergents, hygiene products, food items and nuts.
+      </p>
+      <ul class="industry-list">
+        <li>Contract filling and production</li>
+        <li>Custom packaging and branding</li>
+        <li>Specification and quality control</li>
+      </ul>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="industry-card">
+      <div class="industry-title">Wholesale & cash & carry</div>
+      <p class="industry-text">
+        Ready-to-sell products and formats designed for wholesale markets, cash & carry and regional chains.
+      </p>
+      <ul class="industry-list">
+        <li>High-rotation SKUs</li>
+        <li>Attractive margins for partners</li>
+        <li>Consistent supply from Turkey to Russia</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<section id="about" class="section-about">
+  <style>
+    .section-about {
+      padding: 3rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+      gap: 2rem;
+    }
+
+    .section-about h2 {
+      font-size: 1.8rem;
+      color: var(--gold);
+      margin-bottom: 0.5rem;
+    }
+
+    .section-about p {
+      color: var(--gray);
+      font-size: 0.95rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .about-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .about-badge {
+      font-size: 0.8rem;
+      padding: 0.3rem 0.7rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: var(--gold-light);
+    }
+
+    .about-list {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 0.5rem;
+    }
+
+    .about-list li {
+      font-size: 0.9rem;
+      color: var(--gray);
+      margin-bottom: 0.25rem;
+      padding-left: 0.9rem;
+      position: relative;
+    }
+
+    .about-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--gold);
+    }
+
+    @media (max-width: 850px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <div class="about-grid">
+    <div>
+      <h2>METHOD HOME in brief</h2>
+      <p>
+        METHOD HOME is a sourcing and distribution partner focused on detergents, hygiene products,
+        food items and nuts. Our goal is to connect reliable producers with professional buyers in Russia
+        and surrounding markets.
+      </p>
+      <p>
+        Operating between Turkey, Russia and CIS, we provide a single contact point for product selection,
+        documentation and logistics, so our partners can focus on sales and growth.
+      </p>
+
+      <div class="about-badges">
+        <span class="about-badge">B2B only</span>
+        <span class="about-badge">Detergents & hygiene</span>
+        <span class="about-badge">Food & nuts</span>
+        <span class="about-badge">Russia & CIS focus</span>
+      </div>
+    </div>
+
+    <div>
+      <h3 style="font-size: 1rem; color: var(--gold); margin-bottom: 0.4rem;">Our principles</h3>
+      <ul class="about-list">
+        <li><strong>Reliability:</strong> stable supply and clear communication.</li>
+        <li><strong>Transparency:</strong> honest information on prices, specifications and timelines.</li>
+        <li><strong>Flexibility:</strong> product and packaging options tailored to each partner.</li>
+      </ul>
+
+      <h3 style="font-size: 1rem; color: var(--gold); margin: 1.2rem 0 0.4rem;">Main regions</h3>
+      <ul class="about-list">
+        <li>Russia as the primary market</li>
+        <li>CIS and neighboring regions</li>
+        <li>Close cooperation with Turkish producers</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section id="industries" class="section-industries">
+  <style>
+    .section-industries {
+      padding: 3rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .section-industries-header h2 {
+      font-size: 1.8rem;
+      color: var(--gold);
+      margin-bottom: 0.5rem;
+    }
+
+    .section-industries-header p {
+      color: var(--gray);
+      max-width: 600px;
+      font-size: 0.96rem;
+      margin-bottom: 2rem;
+    }
+
+    .industries-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.5rem;
+    }
+
+    .industry-card {
+      background: #181818;
+      border-radius: 0.9rem;
+      padding: 1.4rem;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      box-shadow: 0 0 18px rgba(0, 0, 0, 0.4);
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      min-height: 180px;
+    }
+
+    .industry-title {
+      font-size: 1.02rem;
+      font-weight: 600;
+      color: var(--white);
+    }
+
+    .industry-text {
+      font-size: 0.9rem;
+      color: var(--gray);
+      flex: 1;
+    }
+
+    .industry-list {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 0.4rem;
+    }
+
+    .industry-list li {
+      font-size: 0.86rem;
+      color: var(--gray);
+      margin-bottom: 0.15rem;
+      padding-left: 0.9rem;
+      position: relative;
+    }
+
+    .industry-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--gold);
+    }
+
+    @media (max-width: 950px) {
+      .industries-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 650px) {
+      .industries-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <div class="section-industries-header">
+    <h2>Industries we serve</h2>
+    <p>
+      METHOD HOME supports professional buyers in the Russian and regional markets, including distributors,
+      manufacturers and wholesale operators.
+    </p>
+  </div>
+
+  <div class="industries-grid">
+    <!-- Card 1 -->
+    <div class="industry-card">
+      <div class="industry-title">Distributors & wholesalers</div>
+      <p class="industry-text">
+        Stable assortments, competitive pricing and documentation support for distribution across Russia
+        and neighboring regions.
+      </p>
+      <ul class="industry-list">
+        <li>Balanced product ranges</li>
+        <li>Flexible minimum order quantities (MOQ)</li>
+        <li>Support with labels and certificates</li>
+      </ul>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="industry-card">
+      <div class="industry-title">Manufacturers & private label</div>
+      <p class="industry-text">
+        Bulk supplies and private-label options for detergents, hygiene products, food items and nuts.
+      </p>
+      <ul class="industry-list">
+        <li>Contract filling and production</li>
+        <li>Custom packaging and branding</li>
+        <li>Specification and quality control</li>
+      </ul>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="industry-card">
+      <div class="industry-title">Wholesale & cash & carry</div>
+      <p class="industry-text">
+        Ready-to-sell products and formats designed for wholesale markets, cash & carry and regional chains.
+      </p>
+      <ul class="industry-list">
+        <li>High-rotation SKUs</li>
+        <li>Attractive margins for partners</li>
+        <li>Consistent supply from Turkey to Russia</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<section id="about" class="section-about">
+  <style>
+    .section-about {
+      padding: 3rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+      gap: 2rem;
+    }
+
+    .section-about h2 {
+      font-size: 1.8rem;
+      color: var(--gold);
+      margin-bottom: 0.5rem;
+    }
+
+    .section-about p {
+      color: var(--gray);
+      font-size: 0.95rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .about-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .about-badge {
+      font-size: 0.8rem;
+      padding: 0.3rem 0.7rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: var(--gold-light);
+    }
+
+    .about-list {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 0.5rem;
+    }
+
+    .about-list li {
+      font-size: 0.9rem;
+      color: var(--gray);
+      margin-bottom: 0.25rem;
+      padding-left: 0.9rem;
+      position: relative;
+    }
+
+    .about-list li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--gold);
+    }
+
+    @media (max-width: 850px) {
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <div class="about-grid">
+    <div>
+      <h2>METHOD HOME in brief</h2>
+      <p>
+        METHOD HOME is a sourcing and distribution partner focused on detergents, hygiene products,
+        food items and nuts. Our goal is to connect reliable producers with professional buyers in Russia
+        and surrounding markets.
+      </p>
+      <p>
+        Operating between Turkey, Russia and CIS, we provide a single contact point for product selection,
+        documentation and logistics, so our partners can focus on sales and growth.
+      </p>
+
+      <div class="about-badges">
+        <span class="about-badge">B2B only</span>
+        <span class="about-badge">Detergents & hygiene</span>
+        <span class="about-badge">Food & nuts</span>
+        <span class="about-badge">Russia & CIS focus</span>
+      </div>
+    </div>
+
+    <div>
+      <h3 style="font-size: 1rem; color: var(--gold); margin-bottom: 0.4rem;">Our principles</h3>
+      <ul class="about-list">
+        <li><strong>Reliability:</strong> stable supply and clear communication.</li>
+        <li><strong>Transparency:</strong> honest information on prices, specifications and timelines.</li>
+        <li><strong>Flexibility:</strong> product and packaging options tailored to each partner.</li>
+      </ul>
+
+      <h3 style="font-size: 1rem; color: var(--gold); margin: 1.2rem 0 0.4rem;">Main regions</h3>
+      <ul class="about-list">
+        <li>Russia as the primary market</li>
+        <li>CIS and neighboring regions</li>
+        <li>Close cooperation with Turkish producers</li>
+      </ul>
+    </div>
+  </div>
+</section>
 </body>
 </html>
